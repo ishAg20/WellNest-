@@ -1,0 +1,111 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #5d4037; /* Dark brown background for the navbar */
+  color: #fff;
+}
+
+.navbar-main {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ffd54f; /* Bright yellow for the main link */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease;
+}
+
+.navbar-main:hover {
+  color: #ffc107; /* Lighter yellow on hover */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2em;
+}
+
+.navbar-link {
+  font-size: 1.2em;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #ffc107; /* Lighter yellow on hover */
+}
+
+.wellnest {
+  font-size: 1.5em;
+  color: #fff;
+  background-color: #3e2723; /* Dark brown background for WellNest */
+  padding: 1em 2em;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .navbar-link {
+    font-size: 1.5em;
+  }
+
+  .navbar-main {
+    font-size: 1.5em;
+  }
+
+  .wellnest {
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar-links {
+    flex-direction: row;
+    gap: 1.5em;
+  }
+
+  .navbar-link {
+    font-size: 1.8em;
+  }
+
+  .navbar-main {
+    font-size: 1.8em;
+  }
+
+  .wellnest {
+    font-size: 1.3em;
+    padding: 0.8em 1.5em;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar-links {
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .navbar-link {
+    font-size: 1.8em;
+  }
+
+  .navbar-main {
+    font-size: 2em;
+  }
+
+  .wellnest {
+    font-size: 1.5em;
+    padding: 1em 2em;
+  }
+}
