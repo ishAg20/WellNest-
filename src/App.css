@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("background.png");
+  background-size: 100vw;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  color: #5d4037;
+  margin: 0;
+  padding: 0;
+}
+.app {
+  text-align: center;
+}
